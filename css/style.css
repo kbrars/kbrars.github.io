@@ -96,8 +96,11 @@ font-family: 'Roboto', sans-serif;
 @media screen and (max-width: 600px) {
 .urunkart{
 margin-left: 5%;
-}
 
+}
+#kurslar{
+  margin-left: 2%;
+}
 }
 
 #resim1{
