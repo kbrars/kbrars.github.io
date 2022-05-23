@@ -10,28 +10,23 @@ window.onload = function ()
 
     yazırenkdegistir();
     let slideIndex = 0;
-    slidelarıgoster();
-
-    function slidelarıgoster() 
-    {
-        let i;
-        let slide2 = document.getElementsByClassName("slidelar");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slide2.length; i++) 
-        {
-            slide2[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slide2.length) { slideIndex = 1 }
-
-        for (i = 0; i < dots.length; i++) 
-        {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-
-        slide2[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(slidelarıgoster, 3700);
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3700); // Change image every 2 seconds
     }
 
 
