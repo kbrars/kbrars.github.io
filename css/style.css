@@ -93,9 +93,9 @@ font-family: 'Roboto', sans-serif;
 }
 
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 .urunkart{
-margin-left: 8%;
+margin-left: 5%;
 }
 
 }
@@ -110,7 +110,7 @@ border: solid green 2px;
 .urunbilgi{
 text-align: center;
 
-
+margin-top:5%;
 text-decoration: underline;
 
 
