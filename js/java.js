@@ -27,7 +27,7 @@ window.onload = function () {
 
         slide2[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
-        setTimeout(slidelarıgoster, 5000);
+        setTimeout(slidelarıgoster, 4500);
     }
 
 
